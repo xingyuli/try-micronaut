@@ -6,7 +6,7 @@ Try the ioc functionality.
 
 ## server
 
-Simple server app, with following micronaut's features demostrated:
+Simple http server app running on port `8080`, with following Micronaut's features demonstrated:
 - AOP
 - db access
 
@@ -16,7 +16,7 @@ Beside these, a HelloWorld like grpc server `HelloServer` is running on port `89
 
 ### AsyncHttpClients.kt
 
-A hands on http client benchmark tool.
+A hands on http client benchmark tool, which test against the http server endpoint `http://localhost:8080/hello/greeting?name=Viclau` .
 
 ### AsyncGrpcClients.kt
 
