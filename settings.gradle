@@ -1,0 +1,5 @@
+rootProject.name="trymicronaut"
+
+include "ioc"
+include "server"
+include "benchmarks"

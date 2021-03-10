@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package hello;
+
+option java_multiple_files = true;
+option java_package="trymicronaut.grpc.hello";
+option java_outer_classname="HelloProto";
+
+message Person {
+  string name = 1;
+}
+
+message GreetingResponse {
+  string text = 1;
+}
+
+service HelloService {
+  rpc greeting(Person) returns (GreetingResponse);
+}

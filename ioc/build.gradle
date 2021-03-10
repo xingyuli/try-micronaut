@@ -1,0 +1,6 @@
+dependencies {
+    // transparent dependent of micronaut-runtime
+    // implementation "io.micronaut:micronaut-inject"
+
+    implementation "io.micronaut:micronaut-runtime"
+}

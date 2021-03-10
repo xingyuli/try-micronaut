@@ -1,0 +1,15 @@
+micronaut:
+  application:
+    name: trymicronaut
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/trymicronaut?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+# used by micronaut-data-hibernate-jpa
+#jpa:
+#  default:
+#    entity-scan:
+#      packages: trymicronaut.data

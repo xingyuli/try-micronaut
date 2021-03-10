@@ -1,0 +1,18 @@
+dependencies {
+    // transparent dependent of micronaut-runtime
+    // implementation "io.micronaut:micronaut-inject"
+
+    implementation project(":server")
+
+    implementation "io.micronaut:micronaut-runtime"
+    implementation "io.micronaut:micronaut-http-client"
+
+    implementation "org.hdrhistogram:HdrHistogram:2.1.12"
+
+    // grpc
+    implementation "io.grpc:grpc-netty-shaded:1.36.0"
+    implementation "io.grpc:grpc-protobuf:1.36.0"
+    implementation "io.grpc:grpc-stub:1.36.0"
+    // TODO viclau should be provided
+    runtimeOnly "org.apache.tomcat:annotations-api:6.0.53"
+}
